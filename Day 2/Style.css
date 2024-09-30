@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+table{
+    width: 100%;
+    border-radius: 12px;
+    border-style: dashed;
+    border-color: blue;
+    border-width: 5px;
+}
+td{
+    border: 1px dashed;
+    text-align: center;
+}
+#heading{
+    text-align: center;
+    font-size: 60px;
+    background-color: orange;
+    color: red;
+}
+#row1{
+    background-color: blueviolet;
+}
+#row2{
+    background-color: chocolate;
+}
