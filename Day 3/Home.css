@@ -1,0 +1,50 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.NavBar
+{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: yellow;
+    align-items: center;
+}
+.Logo img{
+    width: 80px;
+    height: 100px;
+    margin: 10px;
+}
+.Login
+{
+    justify-content: space-between;
+    margin-right: 20px;
+}
+a,.lgn,.sgn{
+    background-color: blueviolet;
+    font-size: 40px;
+    border: 5px solid goldenrod;
+    border-radius: 12px;
+    text-decoration: none;
+    color: black;
+}
+a:hover,.lgn:hover,.sgn:hover{
+    background-color: aqua;
+    color: blue;
+}
+.MainContent{
+    border:3px solid green;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    background-color: aquamarine;
+
+}
+table{
+    font-size: 30px;
+    border: 5px solid orange;
+    border-radius: 12px;
+}
