@@ -39,4 +39,8 @@
     height: 300px;
     text-align: center;
 }
+.MenuItems a{
+    border: 2px solid aquamarine;
+    background-color: yellow;
+}
 
