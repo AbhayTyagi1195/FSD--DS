@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<a href="" target="_blank">Click Me</a>
+<button id="btn">Change the Link</button>
+<script>
+    let s=true;
+
+    changelink=()=>{
+        let link=document.querySelector('a');
+        if(s){
+            link.setAttribute('href','https://aktu.ac.in/');
+            link.textContent="AKTU Website";
+            s=false;
+        }
+        else{
+            link.setAttribute('href','https://abes.ac.in/');
+            link.textContent="ABES Website";
+            s=true;
+        }
+    }
+    let btn=document.getElementById('btn');
+    btn.addEventListener('click',changelink);
+</script>
+</body>
+</html>

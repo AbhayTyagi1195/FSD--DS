@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<button onclick="addelement()">Add Element</button>
+<label for="inp"></label><input type="text" id="inp">
+<script>
+  addelement=()=>{
+    let inp=document.getElementById('inp').value;
+    let newdiv=document.createElement('div');
+    newdiv.innerHTML=inp;
+    document.body.appendChild(newdiv);
+  }
+</script>
+</body>
+</html>

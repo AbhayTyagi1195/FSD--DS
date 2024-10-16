@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<p></p>
+<p></p>
+<h1></h1>
+<!--<button id="btn" onclick="changetitle()">Click Me</button>-->
+<button id="btn">Click Me</button>
+<script>
+    changetitle=()=> {
+        let h1 = document.querySelector('h1');
+        h1.textContent = "I am a Heading";
+    }
+    let btn=document.getElementById('btn');
+    btn.addEventListener('click',changetitle);
+</script>
+</body>
+</html>
