@@ -1,15 +1,11 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-//import './index.css'
-import App from './App.jsx'
-import Marks from "./Marks.jsx";
-import Profile from "./Profile.jsx";
-
+// import Marks from "./Marks.jsx";
+// import Profile from "./Profile.jsx";
+import DisplayMarks from "./DisplayMarks.jsx";
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App name={"Abhay Tyagi"} email={"abhay@gmail.com"} college={"ABES Engineering College"} />
-    <Marks m1={87} m2={87} m3={85} m4={83} m5={85}/>
-    <Marks m1={87} m2={87} m3={85} m4={83} m5={85}/>
-    <Profile />
+    {/*<Marks name={"Abh"} roll={1} m1={2} m2={3} m3={4} m4={5} m5={6}/>*/}
+    <DisplayMarks />
   </StrictMode>,
 )
