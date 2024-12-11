@@ -1,10 +1,15 @@
 import React,{useState} from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-const Register = () => {
+const Register = ({regData}) => {
     const [name, setName] = useState();
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
     const data={name,email,password}
+    const handleregister = (e) => {
+        e.preventDefault();
+        alert("User Registered Successfully");
+        regData(data);
+    }
     return (
         <div>
             {JSON.stringify(data)}
@@ -36,7 +41,7 @@ const Register = () => {
                     />
                 </div>
 
-                <button type="submit" className="btn btn-primary">
+                <button onClick={handleregister} className="btn btn-primary">
                     Submit
                 </button>
             </form>
