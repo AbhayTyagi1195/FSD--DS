@@ -5,6 +5,7 @@ import Register from './components/Register';
 import Logout from './components/Logout';
 import Login from './components/Login';
 import Dashboard from "./components/Dashboard.jsx";
+import WeatherApp from "./components/WeatherApp.jsx";
 const App = () => {
     const [data, setData] = useState();
     return (
@@ -18,6 +19,7 @@ const App = () => {
                     </Route>
                     <Route path="/dashboard" element={<Dashboard regDash={data}/>}/>
                     <Route path='/logout' element={<Logout regLog={setData} />}/>
+                    <Route path="/weather" element={<WeatherApp />}/>
                 </Routes>
             </BrowserRouter>
         </div>
